@@ -18,10 +18,10 @@ const configuration = {
     // leave the social media you do not want to appear as empty strings
     twitter: '@ddbarochiya',
     medium: '@dhruv.barochia34788',
-    facebook: '',
+    facebook: '@dhruv.barochia',
     github: '@dbarochiya',
     linkedin: '@dbarochiya',
-    instagram: '',
+    instagram: '@ddbarochiya',
   },
 }
 

@@ -11,7 +11,7 @@ const configuration = {
   // a longer bio showing on the landing page of the blog
   bio: `Just another curious random guy who loves building random things for more infromation go https://dbarochiya.github.io/me.`,
   author: 'Dhruv Barochiya',
-  githubUrl: 'https://github.com/dbarochiya/blog.git',
+  githubUrl: 'https://github.com/dbarochiya/blog',
   // replace this by the url where your website will be published
   siteUrl: 'http://dbarochiya.netlify.com',
   social: {

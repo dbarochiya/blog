@@ -1,7 +1,7 @@
 ---
-title: "‘ZERO to ONE’ — book review"
-description: "In the most dysfunctional organizations, signaling that work is being done becomes a better strategy for career advancement than actually…"
-date: "2019-06-08T12:21:10.974Z"
+title: "‘ZERO to ONE’ by Peter Theil"
+description: "Book review of this dot.com era author"
+date: "2019-05-08T12:21:10.974Z"
 categories:
   - Book Review 
   - Non-fiction

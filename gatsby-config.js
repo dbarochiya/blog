@@ -9,18 +9,18 @@ const configuration = {
   // It should complete the sentence: Written by Dhruv Barochiya ...
   shortBio: '',
   // a longer bio showing on the landing page of the blog
-  bio: `Just another curious random guy who loves building random things https://dbarochiya.github.io/me.`,
+  bio: `Just another curious random guy who loves building random things for more infromation go https://dbarochiya.github.io/me.`,
   author: 'Dhruv Barochiya',
   githubUrl: 'https://github.com/dbarochiya/blog.git',
   // replace this by the url where your website will be published
-  siteUrl: 'http://localhost:8000',
+  siteUrl: 'http://dbarochiya.netlify.com',
   social: {
     // leave the social media you do not want to appear as empty strings
-    twitter: '',
+    twitter: '@ddbarochiya',
     medium: '@dhruv.barochia34788',
     facebook: '',
-    github: '',
-    linkedin: '',
+    github: '@dbarochiya',
+    linkedin: '@dbarochiya',
     instagram: '',
   },
 }

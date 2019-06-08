@@ -96,5 +96,11 @@ module.exports = {
       resolve: `gatsby-plugin-feed`,
       options: mdxFeed,
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-141653885-1",
+      },
+    }
   ],
 }

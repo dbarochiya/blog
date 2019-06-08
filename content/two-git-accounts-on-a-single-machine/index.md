@@ -1,7 +1,7 @@
 ---
 title: "Two git accounts on a single machine"
 description: "If you are working with multiple git accounts on a single machine then this article will help you out in sorting the messy life you are…"
-date: "2019-06-08T11:07:34.241Z"
+date: "2019-06-08T12:20:57.483Z"
 categories: []
 published: false
 ---

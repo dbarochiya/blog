@@ -1,7 +1,7 @@
 ---
 title: "Automate deployment of projects to GitHub-pages using Travis CI"
 description: "Learn how to automate your build & deployment process to GitHub-pages using the Travis-CI"
-date: "2019-06-08T11:07:25.583Z"
+date: "2019-06-08T12:18:59.578Z"
 categories: []
 published: false
 ---

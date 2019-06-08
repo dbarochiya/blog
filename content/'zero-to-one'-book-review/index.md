@@ -1,7 +1,7 @@
 ---
 title: "‘ZERO to ONE’ — book review"
 description: "In the most dysfunctional organizations, signaling that work is being done becomes a better strategy for career advancement than actually…"
-date: "2019-06-08T11:07:43.963Z"
+date: "2019-06-08T12:21:10.974Z"
 categories: []
 published: false
 ---

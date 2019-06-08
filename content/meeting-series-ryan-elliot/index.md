@@ -1,7 +1,7 @@
 ---
 title: "Meeting Series — Ryan Elliot"
 description: "Introduction"
-date: "2019-06-08T11:07:43.999Z"
+date: "2019-06-08T12:21:11.029Z"
 categories: []
 published: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Addressing the elephant"
 description: "Have you ever realized that there is something horribly wrong with you and you need to change it? I also had that realization moment about…"
-date: "2019-06-08T11:07:43.990Z"
+date: "2019-06-08T12:21:11.013Z"
 categories: []
 published: false
 ---

@@ -2,8 +2,12 @@
 title: "Automate deployment of projects to GitHub-pages using Travis CI"
 description: "Learn how to automate your build & deployment process to GitHub-pages using the Travis-CI"
 date: "2019-06-08T12:18:59.578Z"
-categories: []
-published: false
+categories: 
+  - Tech
+  - Teavis-CI
+  - DevOps
+  - Continuous Delievery (CI/CD)
+published: true
 ---
 
 ![](./asset-1.png)
@@ -123,7 +127,7 @@ There are plenty of security practices we ignore while coding & building web app
 
 I will mention the errors I encountered while working on my project(I would encourage you to mention the errors you have encountered) The great thing is that most of them have their own dedicated web-pages which explain the underlying problem and offers the solutions/workarounds ( Workarounds — we all love it even knowing that we shouldn’t !! )
 
--   **Using target=\_blank in HTML <href> tag :** This is more serious security flaw than it looks. You can learn more about it [here.](https://mathiasbynens.github.io/rel-noopener/)
+-   **Using target=\_blank in HTML `<href>` tag :** This is more serious security flaw than it looks. You can learn more about it [here.](https://mathiasbynens.github.io/rel-noopener/)
 -   **Redundancy in HTML code**: There were many redundant tags/class names which were making the code look like junk.
 
 Best way to prevent these errors is to install the `es-lint` plug-in in whichever text-editor you are using.

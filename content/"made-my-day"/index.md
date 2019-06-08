@@ -1,6 +1,6 @@
 ---
 title: "“MADE MY DAY”"
-description: "walking down the street with, “‘MADE MY DAY’” is published by Dhruv Barochiya"
+description: "Few words enumrating the power of love in the life"
 date: "2017-04-22T22:23:13.251Z"
 categories: 
   - Poetry

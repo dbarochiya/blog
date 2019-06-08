@@ -1,13 +1,11 @@
 ---
 title: "Broken Wishes"
-description: "“Broken Wishes” is published by Dhruv Barochiya"
+description: "Some few wishes which never made their way in this life "
 date: "2017-05-29T19:29:31.900Z"
 categories: 
   - Poetry
-  - Life
-  - Poem
-  - World
   - Love
+  - Life 
 
 published: true
 canonical_link: https://medium.com/@dhruv.barochia34788/broken-promises-f163a56d9b06

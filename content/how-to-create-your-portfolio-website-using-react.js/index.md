@@ -3,10 +3,10 @@ title: "How to create your portfolio website using React.js"
 description: "This article will describe you the path to create your portfolio website into React.js from HTML templates."
 date: "2019-03-29T12:45:23.309Z"
 categories: 
+  - Tech
   - React
   - JavaScript
   - Web Development
-  - Tech
   - Portfolio
 
 published: true

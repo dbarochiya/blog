@@ -88,7 +88,7 @@ module.exports = {
         start_url: '/',
         background_color: '#001724',
         theme_color: '#001724',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
@@ -101,6 +101,7 @@ module.exports = {
       options: {
         trackingId: "UA-141653885-1",
       },
-    }
+    },
+    'gatsby-plugin-offline'
   ],
 }

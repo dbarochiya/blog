@@ -102,6 +102,7 @@ module.exports = {
         trackingId: "UA-141653885-1",
       },
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    `gatsby-plugin-netlify-cms`
   ],
 }

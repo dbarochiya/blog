@@ -1,6 +1,3 @@
 [build]
 	publish = "public"
 	command = "gatsby build"
-
-[[redirects]]
-https://dbarochiya.netlify.com/* https://blog.dhruvbarochiya.me/:splat 301!

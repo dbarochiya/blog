@@ -1,0 +1,16 @@
+.header{
+  text-align: center;
+  color: lavender;
+  background-color: black;
+}
+.header-text{
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.header-text-big{
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+}
+

@@ -7,13 +7,13 @@ const configuration = {
   description: "Dhruv Barochiya's blog",
   // a short bio shown at the bottom of your blog posts
   // It should complete the sentence: Written by Dhruv Barochiya ...
-  shortBio: '',
+  shortBio: "Dhruv Barochiya's blog",
   // a longer bio showing on the landing page of the blog
-  bio: `Just another curious random guy who loves building random things for more infromation go https://dbarochiya.github.io/me.`,
+  bio: "I have been working as full time DevOps engineer at Juniper Networks. I have completed my graduation from DAIICT",
   author: 'Dhruv Barochiya',
-  githubUrl: 'https://github.com/dbarochiya/blog',
+  githubUrl: 'https://github.com/dbarochiya',
   // replace this by the url where your website will be published
-  siteUrl: 'http://dbarochiya.netlify.com',
+  siteUrl: 'http://dhruvbarochiya.com',
   social: {
     // leave the social media you do not want to appear as empty strings
     twitter: '@ddbarochiya',
@@ -102,7 +102,6 @@ module.exports = {
         trackingId: "UA-141653885-1",
       },
     },
-    'gatsby-plugin-offline',
-    `gatsby-plugin-netlify-cms`
+    'gatsby-plugin-offline'
   ],
 }

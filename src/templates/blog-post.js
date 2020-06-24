@@ -3,7 +3,9 @@ import { Link, graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
 import SEO from '../components/seo'
+import Header from '../components/header'
 import Pills from '../components/pills'
+import SideBar from '../components/sidebar'
 import Bio from '../components/bio'
 import Embed from '../components/embed'
 import { formatPostDate, formatReadingTime } from '../utils/dates'
@@ -32,6 +34,8 @@ export default function PageTemplate({ data: { mdx, site }, pageContext }) {
           },
         ]}
       />
+      <Header/>
+      <SideBar/>
       <section className="center blog">
         <article className="container small">
           <header>
@@ -47,7 +51,8 @@ export default function PageTemplate({ data: { mdx, site }, pageContext }) {
 
           <MDXRenderer scope={{ Embed }}>{mdx.code.body}</MDXRenderer>
         </article>
-        <footer className="container small">
+      </section>
+      <footer className="container small">
           <small>
             <a
               target="_blank"
@@ -98,7 +103,6 @@ export default function PageTemplate({ data: { mdx, site }, pageContext }) {
             </li>
           </ul>
         </footer>
-      </section>
     </div>
   )
 }

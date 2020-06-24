@@ -1,58 +1,43 @@
-import React from 'react'
+import React from "react"
 import { graphql, Link } from 'gatsby'
-
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Section from '../components/section'
-import Pills from '../components/pills'
-import MainBio from '../components/main-bio'
-import { formatPostDate, formatReadingTime } from '../utils/dates'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import './index.css'
 
-import './blog-listing.css'
-
-const BlogIndexPage = ({ data: { allMdx } }) => (
+const IndexPage = () => (
   <Layout>
-    <SEO />
-    <Section centered>
-      <MainBio />
-    </Section>
-
-    {allMdx.nodes.map(post => (
-      <Section key={post.fields.slug} name={post.fields.slug} centered>
-        <Link to={post.fields.slug} className="blog-listing">
-          <h1>{post.frontmatter.title}</h1>
-          <p>
-            {formatPostDate(post.frontmatter.date)}
-            {` • ${formatReadingTime(post.timeToRead)}`}
-          </p>
-          <Pills items={post.frontmatter.categories} />
-          <p>{post.frontmatter.description}</p>
-        </Link>
-      </Section>
-    ))}
+    <SEO title="Dhruv Barochiya"/> 
+  <div>
+  <background>
+    <div className="parallax">
+      <div id="stars1" />
+      <div id="stars2" />
+      <div id="stars3" />
+    </div>
+  </background>
+  <div className="wrapper">
+    <main className="page-main">
+      <div>
+        <div className="intro">Hello, I'm Dhruv !</div>
+				<div className="tagline">Just another random guy loves to build random stuff</div>
+        <div className="information">
+          <a className="nav-link" href='/blog'> BLOG </a>
+          <a className="nav-link" href='/about'>ABOUT </a>
+        </div>
+        <div className="icons-social">
+          <a className="icon" target="_blank" href="https://github.com/dbarochiya"><FontAwesomeIcon icon={["fab", "github"]}/></a>
+          <a className="icon" target="_blank" href="https://twitter.com/ddbarochiya"><FontAwesomeIcon icon={["fab", "twitter"]}/></a>
+          <a className="icon" target="_blank" href="https://medium.com/@dhruv.barochia34788"><FontAwesomeIcon icon={["fab", "medium"]}/></a>
+          <a className="icon" target="_blank" href="https://www.linkedin.com/in/dbarochiya"><FontAwesomeIcon icon={["fab", "linkedin"]}/></a>
+        </div>
+      </div>
+    </main>
+    <footer className="page-footer">
+      <div className="message"><strong>PS : </strong>  I will work free for you if you can arrange a date with Emma Watson &amp; a movie night with Robert Downy Jr.
+      </div></footer>
+  </div>
+  </div>
   </Layout>
 )
-
-export default BlogIndexPage
-
-export const query = graphql`
-  query BlogIndex {
-    allMdx(
-      filter: { fields: { published: { eq: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      nodes {
-        fields {
-          slug
-        }
-        timeToRead
-        frontmatter {
-          title
-          description
-          categories
-          date(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-  }
-`
+export default IndexPage

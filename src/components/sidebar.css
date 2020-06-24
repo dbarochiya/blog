@@ -1,0 +1,7 @@
+.sidebar{
+  position: fixed;
+  width: 20%;
+  padding: 2rem;
+  background-color: lightgray;
+  justify-self: end;
+}

@@ -9,13 +9,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Dhruv Barochiya"/> 
   <div>
-  <background>
+  {/* <background>
     <div className="parallax">
       <div id="stars1" />
       <div id="stars2" />
       <div id="stars3" />
     </div>
-  </background>
+  </background> */}
   <div className="wrapper">
     <main className="page-main">
       <div>

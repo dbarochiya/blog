@@ -1,0 +1,65 @@
+.post-container {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: visible;
+  text-decoration: none;
+}
+  
+.image-container {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 20%;
+  height: auto;
+  max-height: 150px;
+  overflow:visible;
+  background-image: url(/* silver laptop on brown wooden table.jpg */);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1px;
+}
+  
+.text-container {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  overflow: visible;
+}
+
+.text-title {
+  flex-shrink: 0;
+  width: 100%;
+  overflow: visible;
+  opacity: 0.85;
+  letter-spacing: 0px;
+  line-height: 1.1;
+  font-size: 48px;
+  color: #1f1919;
+  font-weight: 700;
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", serif;
+}
+  
+.text-subtitle {
+  flex-shrink: 0;
+  width: 100%;
+  overflow: visible;
+  opacity: 0.85;
+  color: #000000;
+  letter-spacing: 0px;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", serif;
+  font-size: 20px;
+  line-height: 1.1;
+}

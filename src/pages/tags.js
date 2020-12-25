@@ -56,7 +56,13 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(limit: 2000) {
+    allMdx(
+      filter: { 
+        frontmatter: { 
+          published: { eq: true } 
+        }  
+      }
+      limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

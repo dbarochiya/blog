@@ -1,8 +1,9 @@
 import { Link } from 'gatsby';
 import React from 'react';
-
+import './footer.css';
 export const Footer = () => (
-  <Link to="/">
-    <h1> I am footer</h1>
-  </Link>
+  <div className='footer'>
+    <Link to="/"> Home </Link>
+    <Link to="/about"> About</Link>
+  </div>
 );

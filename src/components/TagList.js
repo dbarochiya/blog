@@ -17,7 +17,7 @@ const Taglist = ({ items }) => {
                 key={item.fieldValue}
                 style={{ marginRight: 10 }}
             >
-            {item.fieldValue} • {item.totalCount}
+            #{item.fieldValue} • {item.totalCount}
             </Link>
         )}
       )}

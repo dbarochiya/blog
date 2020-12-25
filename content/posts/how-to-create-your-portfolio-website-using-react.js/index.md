@@ -3,7 +3,7 @@ title: "How to create your portfolio website using React.js"
 subtitle: "This article will describe you the path to create your portfolio website into React.js from HTML templates."
 cover : './asset-1.jpeg'
 date: "2019-03-29T12:45:23.309Z"
-tags: [ Tech ,React,JavaScript,Web Development,Portfolio]
+tags: [Tech,React,JavaScript]
 published: true
 canonical_link: https://medium.com/free-code-camp/portfolio-app-using-react-618814e35843
 redirect_from:

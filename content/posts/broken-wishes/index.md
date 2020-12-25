@@ -3,7 +3,7 @@ title: "Broken Wishes"
 subtitle : "Some few wishes which never made their way in this life"
 cover : "./asset-1.jpeg"
 date: "2017-05-29T19:29:31.900Z"
-tags: [ life , poetry , love]
+tags: [Poetry]
 published: true
 canonical_link: https://medium.com/@dhruv.barochia34788/broken-promises-f163a56d9b06
 redirect_from:

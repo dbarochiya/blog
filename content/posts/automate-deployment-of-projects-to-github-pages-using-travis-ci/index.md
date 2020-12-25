@@ -3,7 +3,7 @@ title: "Automate deployment of projects to GitHub-pages using Travis CI"
 subtitle: "Learn how to automate your build & deployment process to GitHub-pages using the Travis-CI"
 cover : './asset-1.png'
 date: "2019-06-08T12:18:59.578Z"
-tags: [ Tech , Travis-ci , Devops , CI/CD]
+tags: [Tech,Devops,CI/CD]
 published: true
 ---
 

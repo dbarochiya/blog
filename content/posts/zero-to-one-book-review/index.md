@@ -1,9 +1,9 @@
 ---
-title: "‘ZERO to ONE’ by Peter Theil"
+title: "ZERO to ONE - by Peter Theil"
 subtitle: "Book review of this dot.com era author"
-cover: '../avatar.png'
+cover: '../avatar.jpg'
 date: "2019-05-08T12:21:10.974Z"
-tags: [Book Review ,Non-fiction, ]
+tags: [Book Review]
 published: true
 ---
 

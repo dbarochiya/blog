@@ -58,7 +58,7 @@ export const Sidebar = () => {
         medium: '@dhruvbarochiya',
         linkedin: 'dbarochiya',
       },
-      newsletter : 'If you like my work and like to hear more from me, consider subscribing to my newsletter'
+      newsletter : 'If you like my work consider buying me a pizza'
     }
     return (
       <div className='sidebar'>
@@ -68,7 +68,7 @@ export const Sidebar = () => {
           <div className='intro-sub-header'> {data.subtitle} </div>
           <div className='social-container'>
             {Object.keys(data.social).map(s =>
-              data.social[s] ? (
+              data.social[s] ? (  
                 <div key={s} className='social-icon'>
                   <a
                     aria-label={`${s} profile`}
@@ -82,8 +82,7 @@ export const Sidebar = () => {
           </div>
         </div>
         <div className='newsletter-container'>
-          <div className='newsletter-text'>{data.newsletter}</div>
-            <input className='newsletter-input' type='text' placeholder='enter your email ...'></input>          
+          <a className='newsletter-text' href="https://www.buymeacoffee.com/dhruvbarochiya">{data.newsletter}</a>
         </div>
       </div>
     )

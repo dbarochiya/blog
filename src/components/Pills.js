@@ -1,6 +1,6 @@
+import { Link } from "gatsby"
 import React from "react"
-import { capitalize } from "../utils/string"
-
+import Dump from "./Dump"
 import "./Pills.css"
 
 function cssSafe(str) {
@@ -10,15 +10,18 @@ function cssSafe(str) {
 const Pills = ({ items }) => {
   return (
     <div className="pills">
-      {(items || []).map( item => (
-        <span
-          className={`pill pill--${cssSafe(item)}`}
-          key={item}
-          style={{ marginRight: 10 }}
-        >
-          {capitalize(item)}
-        </span>
-      ))}
+      {(items || []).map( item => {
+          let link = '/tags/' + item.toLowerCase()
+          return (
+            <Link to={link}
+                className={`pill pill--${cssSafe(item)}`}
+                key={item}
+                style={{ marginRight: 10 }}
+            >
+            #{item}
+            </Link>
+        )}
+      )}
     </div>
   )
 }

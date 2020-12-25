@@ -1,7 +1,7 @@
 const siteMetadata =  {
     title: `My Blog from scratch`,
 	description: `This is my blog built from scratch`, 
-	image: `/static/avatar.png`,
+	image: `./avatar.jpeg`,
 	siteUrl: `https://dhruvbarochiya.com`,
 	siteLanguage: `en-GB`,
 	siteLocale: `en_gb`,

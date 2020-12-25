@@ -1,14 +1,13 @@
 .blog-container {
   box-sizing: border-box;
-  max-width: 900px;
   display: flex;
+  width: 100%;
   align-self: center;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
+  align-items: flex-start;
+  padding: 20px;
   overflow: visible;
-  background-color: #ffffff;
 }
 .header-container {
   flex-shrink: 0;
@@ -34,4 +33,9 @@
   font-size: 48px;
   color: lavender;
   margin-left: -40px;
+}
+
+.blog-container a{
+  text-decoration: underline;
+  color: rgb(90, 90, 230);
 }

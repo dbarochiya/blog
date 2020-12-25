@@ -1,8 +1,11 @@
 import React from "react"
 import { Layout } from '../components/Layout';
 import { TagList } from "../components/TagList";
+import  PostListView from '../components/PostListView';
+
 // Components
 import { Link, graphql } from "gatsby"
+import Dump from "../components/Dump";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -13,23 +16,19 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      
       <h1>{tagHeader}</h1>
-      <Link to="/">All tags</Link>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
+      <Link to="/">All tags</Link>    
+      {data.allMdx.edges.map((n) => ( 
+        <PostListView 
+          id={n.node.id} 
+          title={n.node.frontmatter.title} 
+          subtitle={n.node.frontmatter.subtitle} 
+          cover = {n.node.frontmatter.cover}
+          tags={n.node.frontmatter.tags} 
+          fields={n.node.fields}/> 
+        )
+      )}  
     </Layout>
   )
 }
@@ -42,11 +41,23 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          fields {
-            slug
-          }
+          id
           frontmatter {
             title
+            subtitle
+            tags
+            date(formatString: "YYYY MMMM Do")
+            cover {
+              publicURL
+              childImageSharp {
+                sizes(maxWidth: 400, maxHeight: 250,  traceSVG: { color: "#AAAAAA" }) {
+                  ...GatsbyImageSharpSizes_tracedSVG
+                }
+              }
+            }
+          }
+          fields {
+            slug
           }
         }
       }

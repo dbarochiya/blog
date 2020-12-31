@@ -1,7 +1,5 @@
 import React from 'react';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import Image from 'gatsby-image'
-import Dump from './Dump'
 import './Sidebar.css'
 import {Footer} from '../components/Footer';
 
@@ -50,29 +48,20 @@ const socialIcons = {
   
 export const Sidebar = () => {
     
-    const data = {
-      name : 'Dhruv Barochiya',
-      subtitle : 'I am just anothrer random guy pressing some random buttons on my laptop',
-      social : {
-        twitter: 'dhruvbarochiya',
-        github: 'dbarochiya',
-        medium: '@dhruvbarochiya',
-        linkedin: 'dbarochiya',
-      }
-    }
+  const metadata = useSiteMetadata();
     return (
       <div className='sidebar'>
         <div className='intro-container'>
-          <img className='intro-image' src="https://media-exp1.licdn.com/dms/image/C5603AQHBankQQGvW4g/profile-displayphoto-shrink_400_400/0/1588701046229?e=1614211200&v=beta&t=7Z6bWQk_JwlL6DnV62i9Cf8x83VFCn-3E-Us0z-hxmM"/>
-          <div className='intro-header'> {data.name} </div>
-          <div className='intro-sub-header'> {data.subtitle} </div>
+          <img className='intro-image' src={metadata.image} alt='one good click of mine'/>
+          <div className='intro-header'> {metadata.authorName} </div>
+          <div className='intro-sub-header'> {metadata.description} </div>
           <div className='social-container'>
-            {Object.keys(data.social).map(s =>
-              data.social[s] ? (  
+            {Object.keys(metadata.social).map(s =>
+              metadata.social[s] ? (  
                 <div key={s} className='social-icon'>
                   <a
                     aria-label={`${s} profile`}
-                    href={`${socialURLs[s]}/${data.social[s]}`}
+                    href={`${socialURLs[s]}/${metadata.social[s]}`}
                   >
                     {socialIcons[s]}
                   </a>

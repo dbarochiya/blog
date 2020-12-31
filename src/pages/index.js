@@ -1,34 +1,16 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
-import SEO from 'react-seo-component';
 import TagList from '../components/TagList'
 import { Layout } from '../components/Layout';
 import  PostListView from '../components/PostListView';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import Seo from '../components/Seo';
 import './index.css'
 
 
 export default ({ data }) => {
-  const {
-    description,
-    title,
-    image,
-    siteUrl,
-    siteLanguage,
-    siteLocale,
-    twitterUsername,
-  } = useSiteMetadata();
   return (
     <Layout>
-      <SEO
-        title={title}
-        description={description || `nothin’`}
-        image={`${siteUrl}${image}`}
-        pathname={siteUrl}
-        siteLanguage={siteLanguage}
-        siteLocale={siteLocale}
-        twitterUsername={twitterUsername}
-      />
+      <Seo></Seo>
         <div className='tags-scroller'>
           <TagList items={data.taglist.group}></TagList>
         </div>

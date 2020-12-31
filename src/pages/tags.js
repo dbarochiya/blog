@@ -1,19 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-// Components
-import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 const TagsPage = ({
   data: {
     allMdx: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }) => (
   <div>
-    <Helmet title={title} />
     <div>
       <h1>Tags</h1>
       <ul>
@@ -51,11 +45,6 @@ export default TagsPage
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMdx(
       filter: { 
         frontmatter: { 

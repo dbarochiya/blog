@@ -1,8 +1,8 @@
 const siteMetadata =  {
-    title: `My Blog from scratch`,
-	description: `This is my blog built from scratch`, 
-	image: `avatar.jpeg`,
-	siteUrl: `https://dhruvbarochiya.com`,
+    title: `Dhruv Barochiya's Blog`,
+	description: `I am just a random guy doing random things`, 
+	image: `/avatar.jpeg`,
+	siteUrl: `https://dbarochiya-blog2.netlify.app`,
 	siteLanguage: `en-GB`,
 	siteLocale: `en_gb`,
 	authorName: `Dhruv Barochiya`,
@@ -22,6 +22,7 @@ module.exports = {
     plugins: [
 		`gatsby-plugin-styled-components`,
 		`gatsby-transformer-sharp`,
+		'gatsby-plugin-react-helmet',
 		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-plugin-mdx`,
@@ -51,6 +52,12 @@ module.exports = {
 			path: `${__dirname}/content/posts`,
 			name: `posts`,
 			},
-      	},
+		},
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+			  trackingId: "257417280",
+			},
+		},
     ],
 };

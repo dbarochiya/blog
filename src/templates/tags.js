@@ -1,11 +1,9 @@
 import React from "react"
 import { Layout } from '../components/Layout';
-import { TagList } from "../components/TagList";
 import  PostListView from '../components/PostListView';
-
+import Seo from '../components/Seo';
 // Components
 import { Link, graphql } from "gatsby"
-import Dump from "../components/Dump";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -16,10 +14,10 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      
+      <Seo title={tag}/>
       <h1>{tagHeader}</h1>
       <Link to="/">All tags</Link>    
-      {data.allMdx.edges.map((n) => ( 
+      {edges.map((n) => ( 
         <PostListView 
           id={n.node.id} 
           title={n.node.frontmatter.title} 

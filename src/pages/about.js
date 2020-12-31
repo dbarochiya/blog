@@ -1,32 +1,14 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import SEO from 'react-seo-component';
+import { Link } from 'gatsby';
 import { Layout } from '../components/Layout';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import Seo from '../components/Seo';
 import './about.css'
 
 
-export default ({ data }) => {
-  const {
-    description,
-    title,
-    image,
-    siteUrl,
-    siteLanguage,
-    siteLocale,
-    twitterUsername,
-  } = useSiteMetadata();
+export default () => {
   return (
     <Layout>
-      <SEO
-        title={title}
-        description={description || `nothin’`}
-        image={`${siteUrl}${image}`}
-        pathname={siteUrl}
-        siteLanguage={siteLanguage}
-        siteLocale={siteLocale}
-        twitterUsername={twitterUsername}
-      />
+      <Seo title={'about me'} ></Seo>
         <div className='about-container'>
             <div className='about'>
                 <h1> <Link to="/">«</Link>About me</h1>
@@ -36,8 +18,7 @@ export default ({ data }) => {
             <div className='github'>
                 <h1>GitHub Stats</h1>
                 <div className='github-stats'> 
-                    {/* <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dbarochiya&layout=compact"/> */}
-                    <img src="https://github-readme-stats.vercel.app/api?username=dbarochiya&show_icons=true&hide=contribs&count_private=true"/>
+                    <img src="https://github-readme-stats.vercel.app/api?username=dbarochiya&show_icons=true&hide=contribs&count_private=true" alt='git-hub stats'/>
                 </div>
             </div>
             

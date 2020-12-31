@@ -1,45 +1,27 @@
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
-import SEO from 'react-seo-component';
 import Pills from '../components/Pills';
 import { Layout } from '../components/Layout';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import Seo from '../components/Seo';
 import './post.css'
 
 const Post = ({ data, pageContext }) => {
-  const {
-    image,
-    siteUrl,
-    siteLanguage,
-    siteLocale,
-    twitterUsername,
-    authorName,
-  } = useSiteMetadata();
   const { id, frontmatter, body, fields } = data.mdx;
   const { title, subtitle, tags, date, cover } = frontmatter;
   const { previous, next } = pageContext;
   return (
     <Layout>
-      <SEO
+      <Seo 
         title={title}
         description={subtitle}
-        image={
-          cover === null
-            ? `${siteUrl}${image}`
-            : `${siteUrl}${cover.publicURL}`
-        }
-        pathname={`${siteUrl}${fields.slug}`}
-        siteLanguage={siteLanguage}
-        siteLocale={siteLocale}
-        twitterUsername={twitterUsername}
-        author={authorName}
         article={true}
+        image = {cover}
+        path = {fields.slug}
         publishedDate={date}
         modifiedDate={new Date(Date.now()).toISOString()}
       />
-      
-      <div className='blog-container'>
+      <div className='blog-container' id={id}>
       <article className="container small">
         <header>
           <h1>

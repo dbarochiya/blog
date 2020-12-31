@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import Dump from "./Dump"
 import "./Pills.css"
 
 function cssSafe(str) {

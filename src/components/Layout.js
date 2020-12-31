@@ -13,7 +13,6 @@ export const Layout = ({ children }) => {
         <div className='sidebar-container'><Sidebar/></div>
         <div className='content-container'>{children}</div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

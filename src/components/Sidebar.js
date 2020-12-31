@@ -3,6 +3,7 @@ import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Image from 'gatsby-image'
 import Dump from './Dump'
 import './Sidebar.css'
+import {Footer} from '../components/Footer';
 
 const socialURLs = {
     twitter: 'https://twitter.com',
@@ -57,8 +58,7 @@ export const Sidebar = () => {
         github: 'dbarochiya',
         medium: '@dhruvbarochiya',
         linkedin: 'dbarochiya',
-      },
-      newsletter : 'If you like my work consider buying me a pizza'
+      }
     }
     return (
       <div className='sidebar'>
@@ -81,9 +81,7 @@ export const Sidebar = () => {
             )}
           </div>
         </div>
-        <div className='newsletter-container'>
-          <a className='newsletter-text' href="https://www.buymeacoffee.com/dhruvbarochiya">{data.newsletter}</a>
-        </div>
+        <Footer></Footer>
       </div>
     )
 };

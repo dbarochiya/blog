@@ -52,7 +52,7 @@ export const Sidebar = () => {
     return (
       <div className='sidebar'>
         <div className='intro-container'>
-          <img className='intro-image' src={metadata.image} alt='one good click of mine'/>
+          <img className='intro-image' src={metadata.image} alt='one good click of mine' width='170' height='170'/>
           <div className='intro-header'> {metadata.authorName} </div>
           <div className='intro-sub-header'> {metadata.description} </div>
           <div className='social-container'>

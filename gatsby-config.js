@@ -54,6 +54,18 @@ module.exports = {
 			},
 		},
 		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+			  name: 'Dhruv Barochiya',
+			  short_name: 'Dhruv Barochiya',
+			  start_url: '/',
+			  background_color: '#001724',
+			  theme_color: '#001724',
+			  display: 'standalone',
+			  icon: 'content/images/avatar.jpeg', // This path is relative to the root of the site.
+			},
+		},
+		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
 			  trackingId: "257417280",

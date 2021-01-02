@@ -36,6 +36,7 @@ body {
   flex-shrink: 0;
   width: 100%;
   display: flex;
+  overflow-x: hidden;
   flex-direction: row;
 }
 
@@ -66,10 +67,10 @@ body {
 
 .content-container{
   flex-shrink: 0;
+  box-sizing: border-box;
   width: 100%;
   /* width: 75%; */
   max-width: 950px;
-  overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: start;

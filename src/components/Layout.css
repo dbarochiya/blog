@@ -36,7 +36,6 @@ body {
   flex-shrink: 0;
   width: 100%;
   display: flex;
-  overflow-x: hidden;
   flex-direction: row;
 }
 

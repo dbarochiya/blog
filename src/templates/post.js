@@ -22,6 +22,7 @@ const Post = ({ data, pageContext }) => {
         modifiedDate={new Date(Date.now()).toISOString()}
       />
       <div className='blog-container' id={id}>
+      <article className="container small">
         <header>
           <h1>
             <Link to="/">«</Link> {title}
@@ -30,6 +31,7 @@ const Post = ({ data, pageContext }) => {
           <Pills items={tags} />
         </header>
         <MDXRenderer>{body}</MDXRenderer>
+      </article>
       <ul className='nav-links'>
         <li>
           {previous && (

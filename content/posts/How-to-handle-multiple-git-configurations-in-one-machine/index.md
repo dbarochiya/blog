@@ -7,10 +7,6 @@ tags: [Tech]
 published: true
 ---
 
-# How to handle multiple git configurations in one machine
-
-> Want to manage work and personal git profiles on one machine ?
-
 ![cover.jpg](./cover.jpg)
 
 You might get hard time manging many cats but when it comes to git profiles there is something we can do

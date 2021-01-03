@@ -1,0 +1,14 @@
+.about-container{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    overflow: visible;
+}
+.about-container h1 a {
+    text-decoration: none;
+    font-size: 48px;
+    color: lavender;
+    margin-left: -40px;
+}

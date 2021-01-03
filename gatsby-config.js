@@ -2,7 +2,7 @@ const siteMetadata =  {
     title: `Dhruv Barochiya's Blog`,
 	description: `I am just a random guy doing random things`, 
 	image: `/avatar.jpeg`,
-	siteUrl: `https://dbarochiya-blog2.netlify.app`,
+	siteUrl: `https://dhruvbarochiya.com`,
 	siteLanguage: `en-GB`,
 	siteLocale: `en_gb`,
 	authorName: `Dhruv Barochiya`,

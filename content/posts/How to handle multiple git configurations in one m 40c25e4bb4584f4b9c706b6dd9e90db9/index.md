@@ -1,13 +1,10 @@
 ---
-title: "Broken Wishes"
-subtitle : "Some few wishes which never made their way in this life"
-cover : "./asset-1.jpeg"
-date: "2017-05-29T19:29:31.900Z"
-tags: [Poetry]
+title: "How to handle multiple git configurations in one machine"
+subtitle : "You might get hard time manging many cats but when it comes to git profiles there is something we can do"
+cover : "./cover.jpg"
+date: "2021-01-03T19:29:31.900Z"
+tags: [Tect]
 published: true
-canonical_link: https://medium.com/@dhruv.barochia34788/broken-promises-f163a56d9b06
-redirect_from:
-  - /broken-promises-f163a56d9b06
 ---
 
 # How to handle multiple git configurations in one machine

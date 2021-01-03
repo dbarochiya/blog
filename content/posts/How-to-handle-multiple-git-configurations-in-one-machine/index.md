@@ -1,6 +1,6 @@
 ---
 title: "How to handle multiple git configurations in one machine"
-subtitle : "You might get hard time manging many cats but when it comes to git profiles there is something we can do"
+subtitle : "You might get hard time mangaing many cats but when it comes to git profiles there is something we can do"
 cover : "./cover.jpg"
 date: "2021-01-03T19:29:31.900Z"
 tags: [Tech]
@@ -8,8 +8,6 @@ published: true
 ---
 
 ![cover.jpg](./cover.jpg)
-
-You might get hard time manging many cats but when it comes to git profiles there is something we can do
 
 Let's get straight to the solution - The answer lies in the `.gitconfig` file - this is starter point for the git to identify what configurations needs to be used. The idea is to segregating the repos on your machine into  multiple directories by separating the profiles you want with and then define `.gitconfig` file per profile. 
 
@@ -38,7 +36,7 @@ File → $HOME/.gitconfig
 
 ## Step 3 → create individual git configurations for profiles
 
-If you haven't noticed by now - we have just mentioed the `.gitconfig-personal` and  `.gitconfig-work` files in the global gitconfig files but we are yet to create them. These individual files can contain all the customisation that you need to perform form user name, and email to commit hooks. 
+If you haven't noticed by now - we have just mentioned the `.gitconfig-personal` and  `.gitconfig-work` files in the global gitconfig files but we are yet to create them. These individual files can contain all the customisation that you need to perform form user name, and email to commit hooks. 
 
 FIle → $HOME/.gitconfig-work
 
@@ -64,7 +62,7 @@ Just like that we are set !!  Now you will be having three git files in your hom
 
 ![asset-1.png](./asset-1.png)
 
-Now we will create and intiitialie a new git repo in the work and personal directories and check the configurations. 
+Now we will create and initiate a new git repo in the work and personal directories and check the configurations. 
 
 ```bash
 $ cd ~/work

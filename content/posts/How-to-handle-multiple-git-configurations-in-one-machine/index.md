@@ -3,7 +3,7 @@ title: "How to handle multiple git configurations in one machine"
 subtitle : "You might get hard time manging many cats but when it comes to git profiles there is something we can do"
 cover : "./cover.jpg"
 date: "2021-01-03T19:29:31.900Z"
-tags: [Tect]
+tags: [Tech]
 published: true
 ---
 

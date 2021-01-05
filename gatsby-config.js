@@ -65,11 +65,22 @@ module.exports = {
 			  icon: 'content/images/avatar.jpeg', // This path is relative to the root of the site.
 			},
 		},
+		// {
+		// 	resolve: `gatsby-plugin-google-analytics`,
+		// 	options: {
+		// 	  trackingId: "257417280",
+		// 	},
+		// },
 		{
-			resolve: `gatsby-plugin-google-analytics`,
+			resolve: `gatsby-plugin-gtag`,
 			options: {
-			  trackingId: "257417280",
+			  // your google analytics tracking id
+			  trackingId: `G-JC8L8Q9FGC`,
+			  // Puts tracking script in the head instead of the body
+			  head: false,
+			  // enable ip anonymization
+			  anonymize: true,
 			},
-		},
+		  },
     ],
 };
